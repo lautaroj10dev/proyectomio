@@ -2,9 +2,9 @@
   position: relative;
   width: 100%;
   height: auto;
-  min-height: 650px;
+  min-height: 750px;
   margin: 0;
-  padding: 0;
+  padding: 0 0 100px 0;
 }
 
 .circular-gallery {
@@ -21,12 +21,13 @@
 }
 
 .carousel-labels {
-  position: absolute;
-  bottom: 30px;
+  position: relative;
+  margin-top: 40px;
   left: 0;
   right: 0;
   width: 100%;
-  height: 60px;
+  height: auto;
+  min-height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,7 +58,8 @@
 
 @media (max-width: 1024px) {
   .circular-gallery-wrapper {
-    min-height: 550px;
+    min-height: 650px;
+    padding: 0 0 80px 0;
   }
 
   .circular-gallery {
@@ -71,7 +73,8 @@
 
 @media (max-width: 768px) {
   .circular-gallery-wrapper {
-    min-height: 450px;
+    min-height: 550px;
+    padding: 0 0 70px 0;
   }
 
   .circular-gallery {
@@ -80,6 +83,7 @@
 
   .carousel-labels {
     gap: 1.5rem;
+    margin-top: 30px;
   }
 
   .label-text {
@@ -89,7 +93,8 @@
 
 @media (max-width: 480px) {
   .circular-gallery-wrapper {
-    min-height: 350px;
+    min-height: 450px;
+    padding: 0 0 60px 0;
   }
 
   .circular-gallery {
@@ -98,7 +103,7 @@
 
   .carousel-labels {
     gap: 1rem;
-    bottom: 20px;
+    margin-top: 20px;
   }
 
   .label-text {

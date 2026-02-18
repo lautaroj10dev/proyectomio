@@ -1,0 +1,28 @@
+.inicio {
+  width: 100%;
+}
+
+.inicio-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  grid-auto-rows: minmax(300px, auto);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .inicio-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+    grid-auto-rows: minmax(280px, auto);
+  }
+}
+
+@media (max-width: 640px) {
+  .inicio-content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    grid-auto-rows: minmax(250px, auto);
+  }
+}
